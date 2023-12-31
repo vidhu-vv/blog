@@ -25,6 +25,10 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"gsap": "^3.12.4",
+		"lucide-svelte": "^0.300.0",
+		"split-text-js": "^1.0.3",
+		"svelte-awesome": "^3.3.0",
 		"svelte-routing": "^2.10.0"
 	}
 }

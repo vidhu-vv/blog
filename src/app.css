@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --primary: #9278ca;
-  --secondary: #58389d;
+  --primary: #beb6cf;
+  --secondary: #8967d4;
   --accent: #e7deff;
   /* --primary: #ffffff; */
   /* --secondary: #6ca0e1; */
@@ -17,5 +17,5 @@
 } */
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Major Mono Display', sans-serif;
 }

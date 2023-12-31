@@ -1,14 +1,22 @@
 <script lang="ts">
 	import '../app.css';
+	import NavBar from './NavBar.svelte';
 </script>
 
 <svelte:head>
+	<!-- <NavBar /> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
 	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+		href="https://fonts.googleapis.com/css?family=Major+Mono+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 		rel="stylesheet"
 	/>
 </svelte:head>
+<div class="grid bg-gray-700" style = "grid-template: auto 1fr / 1fr">
+	<NavBar />
+	<main class="bg-gray-700 mt-24 md:mt-0">
+		<slot />
+	</main>
+		
+</div>
 
-<slot />

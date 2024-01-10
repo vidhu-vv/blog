@@ -14,9 +14,9 @@
     </title>
 </svelte:head>
 
-<div class="flex flex-col bg-gray-700 h-screen overflow-hidden">
+<div class="flex flex-col bg-gray-700 h-full overflow-hidden">
     <div
-				class="my-16 bg-gray-700 text-6xl h-30 text-custom mx-auto grid place-items-center rounded-3xl"
+				class="my-16 bg-gray-700 text-6xl h-3 text-custom mx-auto grid place-items-center rounded-3xl"
 	>
     About Me  
     </div> 
@@ -36,7 +36,7 @@
             <span in:fade={{ delay: 1800 }} class="text-purple-300 grid place-items-center">
                 <img src="/blog/vidhu.jpg" class="rounded-full h-64 w-64 inline-block " alt="vidhu pic"/>
             </span>
-            <div in:fade={{ delay: 2000 }} class="text-4xl text-purple-300 py-20">
+            <div in:fade={{ delay: 2000 }} class="text-4xl text-purple-300 py-16">
                 <span class="text-purple-300">
                     More about me
                 </span>

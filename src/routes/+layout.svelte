@@ -16,9 +16,9 @@
 		rel="stylesheet"
 	/>
 </svelte:head>
-<div class="grid bg-gray-700" style = "grid-template: auto 1fr / 1fr">
+<div class="bg-gray-700 flex flex-col">
 	<NavBar />
-	<main class="bg-gray-700 mt-24 md:mt-0">
+	<main class="bg-gray-700 mt-24 md:mt-0 flex-1 w-full h-full">
 		<PageTransition url={data.url}>
 			<slot />
 		</PageTransition>

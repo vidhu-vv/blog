@@ -40,8 +40,8 @@
 	</title>
 </svelte:head>
 
-<div class="flex flex-col bg-gray-700 h-screen overflow-hidden">
-	<div class="h-screen flex flex-col col-span-3">
+<div class="flex flex-col bg-gray-700 h-full overflow-hidden w-full">
+	<div class="h-full flex flex-col col-span-3">
 		<div class="flex-1 w-full">
 			<div
 				class="my-16 bg-gray-700 border-4 border-secondary w-[90%] h-80 mx-auto grid place-items-center rounded-3xl"
@@ -60,7 +60,7 @@
 			</div>
 		</div>
 		<div class="flex-1 w-full overflow-hidden">
-			<div class="my-16 bg-gray-700 mx-auto grid place-items-center rounded-3xl">
+			<div class="my-16 p-4 h-1/2 bg-gray-700 mx-auto grid place-items-center rounded-3xl">
 				{#key index}
 					<button
 						class="animate-text flex text-3xl font-bold transition duration-200 hover:scale-110 hover:text-purple-300"
@@ -71,7 +71,6 @@
 						on:mouseenter={() => {
 							visible = true;
 						}}
-						transition:fade
 					>
 						{#if index === 0}
 							<Instagram size={128} />
@@ -91,6 +90,7 @@
 	div {
 		font-family: 'Major Mono Display';
 		font-size: 22px;
+		overflow-x: hidden;
 	}
 
 	.animate-text {

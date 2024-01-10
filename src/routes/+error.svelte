@@ -7,8 +7,8 @@
     <title>Vidhu's Villa - {$page.status}</title>
 </svelte:head>
 
-<div class="h-screen grid place-content-center overflow-hidden bg-gray-700 error">
-    <div class="text-9xl text-purple-300 grid place-items-center py-32">Oops!</div>
+<div class="h-full grid place-content-center overflow-hidden bg-gray-700 error w-full">
+    <div class="text-9xl text-purple-300 grid place-items-center py-28">Oops!</div>
     <br>
     <div class="grid place-items-center py-32"> 
         <Hammer size={128} color='#ffffff'/>

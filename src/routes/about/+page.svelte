@@ -1,10 +1,6 @@
 <script lang="ts">
-    // import { goto } from '$app/navigation';
-    import { Instagram, Youtube, Github } from 'lucide-svelte';
-    import { onDestroy, onMount } from 'svelte';
-    import { fade, blur, fly, slide, scale, draw, crossfade } from 'svelte/transition';
-    const goto = (url: string) => (window.location.href = url);
-
+    import { onMount } from 'svelte';
+    import { fade} from 'svelte/transition';
     let mounted = false;
     onMount(() => {
         mounted = true;
@@ -38,7 +34,7 @@
                 </span>
             </div>
             <span in:fade={{ delay: 1800 }} class="text-purple-300 grid place-items-center">
-                <img src="/vidhu.jpg" class="rounded-full h-64 w-64 inline-block " alt="vidhu pic"/>
+                <img src="/blog/vidhu.jpg" class="rounded-full h-64 w-64 inline-block " alt="vidhu pic"/>
             </span>
             <div in:fade={{ delay: 2000 }} class="text-4xl text-purple-300 py-20">
                 <span class="text-purple-300">

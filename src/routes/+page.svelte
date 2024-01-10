@@ -2,7 +2,7 @@
 	// import { goto } from '$app/navigation';
 	import { Instagram, Youtube, Github } from 'lucide-svelte';
 	import { onDestroy, onMount } from 'svelte';
-	import { fade, blur, fly, slide, scale, draw, crossfade } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 	const goto = (url: string) => (window.location.href = url);
 	let links = [
 		{

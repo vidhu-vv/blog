@@ -2,9 +2,6 @@
     import { goto } from '$app/navigation';
     import { formatDate } from '$lib/utils';
     export let data;
-
-    let visible = false;
-
 </script>
 <svelte:head>
     <title>Vidhu's Villa - Blogs</title>

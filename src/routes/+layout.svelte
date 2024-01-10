@@ -1,6 +1,10 @@
 <script lang="ts">
 	import '../app.css';
 	import NavBar from './NavBar.svelte';
+	import PageTransition from './transition.svelte';
+
+	export let data;
+
 </script>
 
 <svelte:head>
@@ -15,7 +19,9 @@
 <div class="grid bg-gray-700" style = "grid-template: auto 1fr / 1fr">
 	<NavBar />
 	<main class="bg-gray-700 mt-24 md:mt-0">
-		<slot />
+		<PageTransition url={data.url}>
+			<slot />
+		</PageTransition>
 	</main>
 		
 </div>

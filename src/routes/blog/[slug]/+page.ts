@@ -1,8 +1,12 @@
-import { error } from '@sveltejs/kit'
+import { error, redirect } from '@sveltejs/kit'
 
 export async function load({ params }) {
     try{
         const post = await import(`../../../posts/${params.slug}.md`);
+
+        if(!post.metadata.published) {
+            throw redirect(302, '/blog')
+        }
 
         return {
             content: post.default,

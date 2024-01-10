@@ -2,7 +2,7 @@
 title: AP Lang
 description: I just clutched up on AP Lang.
 date: '2024-1-7'
-published: true
+published: false
 thumbnail: '/blog/vidhu.jpg'
 ---
 

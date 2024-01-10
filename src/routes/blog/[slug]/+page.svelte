@@ -1,6 +1,7 @@
 <script lang="ts">
     import { formatDate } from '$lib/utils.js';
 
+    import { goto } from '$app/navigation';
     export let data;
 </script>
 
@@ -19,33 +20,33 @@
 </svelte:head>
 
 <article class="prose-sm">
-    <div class="flex flex-col bg-gray-700 h-screen overflow-hidden w-100">
-            <div class="my-16 border-b-0 bg-gray-700 h-10 mx-auto grid place-items-center rounded-3xl">
-                <div class="font-bold text-purple-300 text-2xl h-fit">
-                    <h1 class="title">
-                        <span class="text-purple-300">
-                            {data.meta.title}
-                        </span>
-                        <span class="text-purple-500">
-                            on {formatDate(data.meta.date)}
-                        </span>
-                            
-                    </h1>
+        <div class="flex flex-col bg-gray-700 h-screen overflow-hidden w-100">
+                <div class="my-16 border-b-0 bg-gray-700 h-10 mx-auto grid place-items-center rounded-3xl">
+                    <div class="font-bold text-purple-300 text-2xl h-fit">
+                        <h1 class="title">
+                            <span class="text-purple-300">
+                                {data.meta.title}
+                            </span>
+                            <span class="text-purple-500">
+                                on {formatDate(data.meta.date)}
+                            </span>
+                                
+                        </h1>
+                    </div>
                 </div>
+                <div class="grid place-items-start text-custom h-1 font-extrabold text-purple-300">
+                    <p>{data.meta.description}</p>
+                </div>
+                <div class="grid place-items-start text-custom h-20 font-extrabold text-purple-300">
+                    <hr>
+                </div>
+                <div class="grid place-items-center">
+                    <img src="{data.meta.thumbnail}" alt="Thumbnail"/>
+                </div>
+            <div class="text-white"> 
+                <svelte:component this={data.content} />
             </div>
-            <div class="grid place-items-start text-custom h-1 font-extrabold text-purple-300">
-                <p>{data.meta.description}</p>
-            </div>
-            <div class="grid place-items-start text-custom h-20 font-extrabold text-purple-300">
-                <hr>
-            </div>
-            <div class="grid place-items-center">
-                <img src="{data.meta.thumbnail}" alt="Thumbnail"/>
-            </div>
-        <div class="text-white"> 
-            <svelte:component this={data.content} />
         </div>
-    </div>
 </article>
 
 <style>

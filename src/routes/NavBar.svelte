@@ -4,18 +4,41 @@
 
 
 <div class="fixed top-0 z-50 flex h-[74px] w-full bg-gray-700 md:sticky">
-    <div class="w-screen max-w-6xl px-5 flex items-center">
+    <div class="w-screen max-w-6xl px-5 flex items-center justify-between">
         <div class="animate-home flex font-bold text-5xl">
-            <button class="text-7xl py-5" on:click={() => {goto('/'); console.log('clicked home')}}>
+            <button class="text-7xl py-5 font-cor" on:click={() => {goto('/'); console.log('clicked home')}}>
                 V
             </button>
         </div>
+		
     </div>
+	<div class="w-full mx-20 flex justify-end">
+		<div class="flex justify-items-end">
+			<span class="animate-link">
+				<button class="text-4xl p-5 mx-5 font-cor" on:click={() => {goto('/blog'); console.log('clicked blog')}}>
+					blog
+				</button>
+			</span>
+			<span class="animate-link">
+				<button class="text-4xl py-5 font-cor" on:click={() => {goto('/about'); console.log('clicked about')}}>
+					About
+				</button>
+			</span>
+		</div>
+	</div>
 </div>
 
 <style>
     * {
 		box-sizing: border-box;
+	}
+	.font-cor {
+		font-family: "Major Mono Display", sans-serif;
+	}
+	.animate-link:hover {
+		animation: link 0.5s ease-in-out;
+		animation-fill-mode: forwards;
+	
 	}
 	.animate-home {
 		animation-duration: home-reverse 1s ease-in-out;
@@ -24,6 +47,14 @@
 	.animate-home:hover {
 		animation : home 1s ease-in-out;
 		animation-fill-mode: forwards;
+	}
+	@keyframes link {
+		0% {
+			color: auto;
+		}
+		100% {
+			color: violet;
+		}
 	}
 
 	@keyframes home-reverse {

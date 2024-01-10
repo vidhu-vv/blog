@@ -6,20 +6,23 @@
     let visible = false;
 
 </script>
+<svelte:head>
+    <title>Vidhu's Villa - Blogs</title>
+</svelte:head>
 <div class="flex flex-col bg-gray-700 h-screen overflow-hidden">
     <div
-				class="my-16 bg-gray-700 text-6xl h-30 mx-auto grid place-items-center rounded-3xl"
+				class="my-16 bg-gray-700 text-6xl h-30 text-custom mx-auto grid place-items-center rounded-3xl"
 	>
-    Blogs   
+    blogs   
     </div> 
     <div class="flex flex-col items-center justify-center">
         <ul class="posts grid place-items-center">
             {#each data.posts as blog}
                 <li class="post">
-                    <a href="/blog/{blog.slug}" class ="title">
-                        {blog.title} 
-                        <p class="date">{formatDate(blog.date)}</p>
-                        <p class="description">{blog.description}</p>
+                    <a href="/blog/{blog.slug}" class ="title grid place-items-center">
+                        {blog.title}
+                            <p class="date h-12">{formatDate(blog.date)}</p>
+                            <p class="description">{blog.description}</p>
                     </a>
     
             {/each}
@@ -46,7 +49,6 @@
     }
     .post:hover .title {
         color: #d8b4fe;
-        scale: 1.1;
         transition: color 0.5s ease;
     }
 
@@ -65,5 +67,8 @@
     .description {
         font-size: 1rem;
         color: #fff;
+    }
+    .text-custom {
+        font-family: 'Major Mono Display';
     }
 </style>

@@ -34,6 +34,11 @@
 	});
 	let visible = false;
 </script>
+<svelte:head>
+	<title>
+		Vidhu's Villa
+	</title>
+</svelte:head>
 
 <div class="flex flex-col bg-gray-700 h-screen overflow-hidden">
 	<div class="h-screen flex flex-col col-span-3">

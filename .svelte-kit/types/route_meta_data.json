@@ -1,5 +1,6 @@
 {
 	"/": [],
+	"/about": [],
 	"/api/posts": [
 		"src/routes/api/posts/+server.ts"
 	],

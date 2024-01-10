@@ -4,11 +4,11 @@
 
 :root {
   --primary: #beb6cf;
-  --secondary: #8967d4;
+  --secondary: #997add;
   --accent: #e7deff;
   /* --primary: #ffffff; */
   /* --secondary: #6ca0e1; */
-  --text: #58389d;
+  --text: #7058a5;
   --background: #374151;
 }
 
@@ -16,6 +16,11 @@
 	font-family: 'Major Mono Display', serif;
 } */
 
-* {
+/* * {
   font-family: 'Major Mono Display', sans-serif;
+} */
+* {
+  font-family: 'Raleway', sans-serif;
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
 }

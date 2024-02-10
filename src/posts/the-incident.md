@@ -1,7 +1,7 @@
 ---
 title: The Incident...
 description: That time I almost bricked my computer...
-date: '2024-2-3'
+date: '2024-2-10'
 published: true
 thumbnail: '/blog/van9003.png'
 ---

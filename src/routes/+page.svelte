@@ -2,7 +2,6 @@
 	// import { goto } from '$app/navigation';
 	import { Instagram, Youtube, Github } from 'lucide-svelte';
 	import { onDestroy, onMount } from 'svelte';
-	import { fade } from 'svelte/transition';
 	const goto = (url: string) => (window.location.href = url);
 	let links = [
 		{
@@ -46,7 +45,7 @@
 			<div
 				class="my-16 bg-gray-700 border-4 border-secondary w-[90%] h-80 mx-auto grid place-items-center rounded-3xl"
 			>
-				<div class="animate-text text-justify text-secondary">
+				<div class="animate-text text-justify text-secondary w-[90%] flex justify-center place-items-center overflow-hidden">
 					<button
 						class="text-7xl font-bold transition duration-200 ease-in-out hover:scale-110 hover:text-purple-300"
 						on:click={() => {
@@ -60,7 +59,7 @@
 			</div>
 		</div>
 		<div class="flex-1 w-full overflow-hidden">
-			<div class="my-16 p-4 h-1/2 bg-gray-700 mx-auto grid place-items-center rounded-3xl">
+			<div class="my-16 p-4 h-1/2 bg-gray-700 mx-auto grid place-items-center rounded-3xl overflow-hidden">
 				{#key index}
 					<button
 						class="animate-text flex text-3xl font-bold transition duration-200 hover:scale-110 hover:text-purple-300"

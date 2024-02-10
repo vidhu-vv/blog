@@ -20,7 +20,7 @@
 </svelte:head>
 
 <article class="prose-sm">
-        <div class="flex flex-col bg-gray-700 h-screen overflow-hidden w-100">
+        <div class="flex flex-col bg-gray-700 h-full w-100">
                 <div class="my-16 border-b-0 bg-gray-700 h-10 mx-auto grid place-items-center rounded-3xl">
                     <div class="font-bold text-purple-300 text-2xl h-fit">
                         <h1 class="title">
@@ -34,10 +34,10 @@
                         </h1>
                     </div>
                 </div>
-                <div class="grid place-items-start text-custom h-1 font-extrabold text-purple-300">
+                <div class="grid place-items-start text-custom h-11 font-extrabold text-purple-300">
                     <p>{data.meta.description}</p>
                 </div>
-                <div class="grid place-items-start text-custom h-20 font-extrabold text-purple-300">
+                <div class="py-0">
                     <hr>
                 </div>
                 <div class="grid place-items-center">

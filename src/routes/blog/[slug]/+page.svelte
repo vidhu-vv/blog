@@ -40,9 +40,6 @@
                 <div class="py-0">
                     <hr>
                 </div>
-                <div class="grid place-items-center">
-                    <img src="{data.meta.thumbnail}" alt="Thumbnail"/>
-                </div>
             <div class="text-white"> 
                 <svelte:component this={data.content} />
             </div>

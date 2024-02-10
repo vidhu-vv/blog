@@ -9,11 +9,6 @@
     <title>
         Vidhu's Villa - {data.meta.title}
     </title>
-    <div
-				class="my-16 bg-gray-700 text-6xl h-30 mx-auto grid place-items-center rounded-3xl"
-	>
-    {data.meta.title}   
-    </div>
     <meta property="og:type" content="article" />
     <meta property="og:title" content="{data.meta.title}" />
 
